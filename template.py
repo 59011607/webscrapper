@@ -363,11 +363,11 @@ def webscraper(url):
 def callPredict():
     # ใส่โค้ด callPredict ของคุณที่นี่global nameteam
     global b
-    dataset = pd.read_csv(r"D:\machineforplay\newmodel.csv")
+    dataset = pd.read_csv(r"newmodel.csv")
     X = dataset.iloc[:, :-1].values
     y = dataset.iloc[:, -1].values
 
-    dataset = pd.read_csv(r"D:\machineforplay\newmodel.csv")
+    dataset = pd.read_csv(r"newmodel.csv")
     X = dataset.iloc[:, :-1].values
     y = dataset.iloc[:, -1].values
 
@@ -472,7 +472,7 @@ def callPredict():
 def callResult():
     # ใส่โค้ด callResult ของคุณที่นี่
     global nameteam
-    dataset = pd.read_csv(r"D:\machineforplay\testgroupby.csv")
+    dataset = pd.read_csv(r"testgroupby.csv")
     p = dataset.iloc[:, -1].values
     item_group = dataset.groupby(
         [
